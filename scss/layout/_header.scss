@@ -1,0 +1,5 @@
+@use '../abstracts/' as *;
+.header {
+  width: $websize;
+  margin-inline: auto;
+}
