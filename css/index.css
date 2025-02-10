@@ -27,6 +27,20 @@ a {
 
 .header {
   width: 160rem;
+  margin: 10rem auto auto;
+}
+
+.utility {
+  position: absolute;
+  inset: 0 0 auto;
+  background-color: #000;
+  padding-block: 2rem;
+}
+.utility > div {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  width: 160rem;
   margin-inline: auto;
 }
 
@@ -59,6 +73,50 @@ a {
 }
 .familySite li:nth-child(5):hover {
   color: silver;
+}
+
+.btn-archive {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+.btn-archive::before {
+  content: "";
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url("/images/ico_archive.svg") no-repeat center;
+  background-size: contain;
+}
+.utility .btn-archive::before {
+  background: url("/images/ico_archive_wht.svg") no-repeat center;
+  background-size: contain;
+}
+.utility .btn-archive {
+  color: #fff;
+}
+
+.btn-calendar {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+.btn-calendar::before {
+  content: "";
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url("/images/ico_calendar.svg") no-repeat center;
+  background-size: contain;
+}
+.utility .btn-calendar::before {
+  background: url("/images/ico_calendar_wht.svg") no-repeat center;
+  background-size: contain;
+}
+.utility .btn-calendar {
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */
